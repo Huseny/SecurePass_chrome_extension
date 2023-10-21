@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Password Details</title>
+    <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+  </head>
+  <body style="width: 300px">
+    <div class="container">
+      <a href="../passwords list/passwords.html">
+        <div class="back-btn">
+          <button id="backBtn" class="btn btn-light">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+        </div>
+      </a>
+      <h2>Password Details</h2>
+
+      <form>
+        <div class="form-group">
+          <label for="title">Title:</label>
+          <input type="text" id="title" class="form-control" readonly />
+        </div>
+        <div class="form-group">
+          <label for="url">URL:</label>
+          <input type="url" id="url" class="form-control" readonly />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <div class="input-group d-flex">
+            <input
+              type="password"
+              id="password"
+              class="form-control"
+              readonly
+            />
+            <div class="input-group-append">
+              <button
+                id="copyPassword"
+                class="btn btn-primary copy-button"
+                type="button"
+              >
+                Copy
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="details.js"></script>
+  </body>
+</html>

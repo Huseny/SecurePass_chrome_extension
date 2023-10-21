@@ -1,0 +1,30 @@
+{
+    "name": "SecurePass",
+    "version": "0.1.0",
+    "description": "Your secure password manager for effortless password management and generation.",
+    "permissions": ["storage", "webNavigation", "scripting", "tabs"],
+    "host_permissions": [
+        "https://*/*",
+        "http://*/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["crypto-js.min.js", "pages/password generator/password-generator.min.js", "node_modules/bootstrap/dist/js/bootstrap.bundle.js" ,"passwordManager.js"],
+        "css": ["node_modules/bootstrap/dist/css/bootstrap.min.css"]
+      }
+    ],
+    
+    "action": {
+      "default_icon": {
+        "128": "assets/logo.png"
+      },
+      "default_title": "SecurePass",
+      "default_popup": "pages/signup/signup.html"
+    },
+    "manifest_version": 3
+}
+ 

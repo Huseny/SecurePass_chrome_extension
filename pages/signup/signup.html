@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Extension Signup</title>
+    <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body style="width: 300px">
+    <div class="container">
+      <div class="signup-form">
+        <div class="logo-container">
+          <img
+            src="../../assets/logo.png"
+            alt="Extension Logo"
+            width="100"
+            height="100"
+          />
+        </div>
+        <div id="not-signed" style="font-size: x-small"></div>
+        <h2>Sign Up</h2>
+        <form class="form_flex">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Enter a password"
+            />
+          </div>
+          <div id="error-msg" style="font-size: x-small"></div>
+          <div>
+            <button type="submit" class="btn btn-primary" id="submitBtn">
+              Sign Up
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="signup.js"></script>
+  </body>
+</html>

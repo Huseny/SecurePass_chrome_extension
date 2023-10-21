@@ -1,0 +1,15 @@
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .back-btn {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .center-content {
+    text-align: center;
+  }
